@@ -17,7 +17,7 @@ function landing_page()
 		elseif landing_page == "next-nas" then
 			http.redirect(luci.dispatcher.build_url("admin","istorex","next-nas"));
 		elseif landing_page == "router" then
-			http.redirect(luci.dispatcher.build_url("admin","istorex","router"));
+			http.redirect(luci.dispatcher.build_url("admin","quickstart"));
 		else
 			http.redirect(luci.dispatcher.build_url("admin","quickstart"));
 		end
